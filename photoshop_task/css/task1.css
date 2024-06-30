@@ -1,0 +1,1729 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+@font-face {
+  font-family: Lucida-Bright-Demibold, sans-serif;
+  src: url("../fonts/lucida/Lucida-Bright-Demibold.htm");
+  font-family: Brevia-Semibold, sans-serif;
+  src: url("../fonts/brevia/brevia-semibold/Brevia-Semibold.otf");
+  font-family: brevia-regular, sans-serif;
+  src: url("../fonts/brevia/brevia\ regular/");
+  font-family: brevia-medium, sans-serif;
+  src: url("../fonts/brevia/brevia\ medium/");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --pink: #9b315d;
+  --lightpink: #ef77aa;
+  --black: #2e0f1c;
+  --greydark: #f4f4f4;
+}
+body {
+  position: relative;
+  background-color: #f9f9f9;
+}
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.common_padding {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.py-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 55px;
+  font-family: Lucida-Bright-Demibold, sans-serif;
+  line-height: 78px;
+}
+h2 {
+  font-family: Lucida-Bright-Demibold, sans-serif;
+  font-size: 62px;
+  line-height: 78.79px;
+}
+h2 span {
+  background-color: var(--lightpink);
+  color: white;
+  padding: 14px 16px;
+  border-radius: 4px;
+}
+h3 {
+  font-family: Brevia-Semibold, sans-serif;
+  font-size: 42px;
+}
+h4 {
+  font-family: Brevia-Semibold, sans-serif;
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 600;
+  margin-bottom: 38px;
+}
+h5 {
+  font-family: brevia-medium, sans-serif;
+  font-size: 32px;
+  color: var(--pink);
+}
+h6 {
+  font-family: Lucida-Bright-Demibold, sans-serif;
+  font-size: 28px;
+}
+p {
+  font-family: brevia-regular, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+.btn {
+  font-family: brevia-medium, sans-serif;
+  padding: 16px;
+  border: 2px solid #9b315d;
+  border-radius: 30px;
+  color: var(--pink);
+  font-size: 18px;
+  /* line-height: 78px; */
+}
+nav {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logopart {
+  display: flex;
+  align-items: center;
+}
+.logotext p {
+  font-size: 35px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+}
+.logotext p span {
+  color: var(--pink);
+}
+.logotext p a {
+  font-size: 52px;
+  color: var(--black);
+}
+.nav_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_link ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+.nav_link ul li {
+  margin-left: 60px;
+}
+.nav_link ul li a {
+  color: white;
+  font-size: 24px;
+  font-family: Brevia-Semibold, sans-serif;
+  font-weight: 600;
+}
+.nav_link ul li a.active {
+  color: #9b315d;
+}
+.toggler {
+  margin-left: 60px;
+}
+.toggler i {
+  font-size: 35px;
+  color: var(--pink);
+}
+/* banner */
+.banner {
+  height: 790px;
+  background-image: url("../images/Banner\ img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+.banner_content {
+  height: 790px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.banner_text_part {
+  width: 39%;
+  position: absolute;
+  top: 270px;
+  right: 20px;
+}
+.banner_text_part h1 {
+  margin-bottom: 24px;
+  color: var(--black);
+}
+.banner_text_part h1 span {
+  background-color: var(--lightpink);
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+.banner_text_part h5 {
+  margin-bottom: 24px;
+}
+.banner_text_part p {
+  margin-bottom: 25px;
+  line-height: 24px;
+}
+.banner_btn {
+  font-family: brevia-regular, sans-serif;
+  font-weight: 400;
+  padding: 12px 38px 12px 33px;
+  border: 2px solid #9b315d;
+  border-radius: 30px;
+  color: #9b315d;
+  font-size: 18px;
+}
+/* philosophy */
+.philosophy {
+  background-color: #f5f5f5;
+}
+.philosophy_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.philosophy_content .left_part {
+  width: 50%;
+}
+.philosophy_content .right_part {
+  width: 50%;
+}
+.philosophy_content .left_part h2 {
+  margin-bottom: 56px;
+}
+.para1 {
+  margin-bottom: 43px;
+  line-height: 30px;
+}
+.para2 {
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+.philosophy_content .right_part {
+  padding-right: 20px;
+  /* background-color: aqua; */
+}
+.left_part {
+  /* background-color: red; */
+}
+/* card_section */
+
+.card_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_section .cards {
+  width: 33%;
+  text-align: center;
+  padding: 35px;
+}
+/* .card_section .cards .highlighted{
+  background-color: #ffffff;
+  box-shadow: 0 7px 5px 0 rgba(8, 8, 8, 0.685);
+}  */
+.card_section .card_img {
+  padding: 20px;
+  border: 2px solid #9b315d;
+  border-radius: 100%;
+  margin-bottom: 58px;
+}
+.card_section .card_body h4 span {
+  color: var(--lightpink);
+}
+.card_section .card_body p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* beginners */
+.beginners_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.beginners_content .left_part {
+  width: 65%;
+}
+.beginners_content .right_part {
+  width: 35%;
+}
+.beginners_content .left_part h2 {
+  margin-bottom: 56px;
+}
+/* .beginners_content .right_part .cards{
+  background-color: var(--greydark);
+} */
+/* strength */
+.strength {
+  padding-top: 70px;
+}
+.strength_content {
+  background-color: var(--greydark);
+  padding-top: 30px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.strength_content .left_part {
+  width: 25%;
+  margin-left: 30px;
+}
+.strength_content .right_part {
+  width: 38%;
+  margin-left: 30px;
+  position: relative;
+}
+.strength_content .right_part p {
+  font-family: brevia-regular, sans-serif;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+}
+.yogi {
+  position: absolute;
+  right: 30px;
+}
+.yogi a {
+  color: var(--pink);
+  font-weight: 600;
+}
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.strength .arrow .fa-angle-left,
+.strength .arrow .fa-angle-right {
+  padding: 14px 21px;
+  background-color: var(--pink);
+  color: white;
+  font-size: 30px;
+}
+.strength .arrow .fa-angle-left {
+  position: absolute;
+  left: 40px;
+}
+.arrow .fa-angle-right {
+  position: absolute;
+  right: 40px;
+}
+/* yoga */
+.yoga {
+  padding-bottom: 70px;
+}
+.yoga_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yoga_content .left_text_part,
+.yoga_content .right_part {
+  width: 50%;
+}
+.yoga .left_text_part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yoga .yoga_text h2 {
+  margin-bottom: 30px;
+}
+.yoga .yoga_text h3 {
+  color: var(--black);
+  margin-bottom: 30px;
+}
+.yoga .yoga_text p {
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 35px;
+}
+/* first class free */
+.first_class_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first_class_content .cards {
+  width: 32%;
+  background-color: var(--pink);
+  color: white;
+}
+.first_class_content .card_body {
+  padding-left: 18px;
+  /* padding-top: 25px;  padding-margin confusion*/
+  padding-bottom: 32px;
+  /* background-color: red; */
+}
+.first_class_content .card_img {
+  margin-bottom: 25px;
+}
+.first_class_content .card_body h6 {
+  margin-bottom: 31px;
+}
+.first_class_content .card_body p {
+  margin-bottom: 29px;
+}
+.first_class_content .card_body a {
+  font-family: brevia-medium, sans-serif;
+  color: white;
+}
+.first_class_container {
+  display: none;
+}
+/* methodology */
+.method_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.method_content .left_part {
+  width: 60%;
+}
+.method_content .left_part h2 {
+  margin-bottom: 60px;
+}
+.method_content .right_part {
+  width: 40%;
+  position: relative;
+}
+.method_content .right_part img {
+  /* width: 100%; */
+  padding: 180px 0 90px 50px;
+}
+
+.pause_btn {
+  color: rgb(250, 248, 248);
+  font-size: 55px;
+  position: absolute;
+  top: 330px;
+  right: 200px;
+}
+/* yoga-therapy */
+.yoga_therapy {
+  height: 85vh;
+  background-image: url("../images/footer-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 70px;
+}
+.yoga_therapy_content {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.yoga_therapy_text {
+  position: absolute;
+  top: 37px;
+}
+.yoga_therapy_text h2 {
+  margin-bottom: 45px;
+}
+.yoga_therapy_text p {
+  font-family: brevia-medium, sans-serif;
+  font-size: 38px;
+}
+.yoga_therapy_text .inhale {
+  margin-bottom: 40px;
+}
+.yoga_therapy_text p i {
+  margin-right: 13px;
+}
+/* footer */
+.footer_container {
+  background-color: var(--pink);
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 4px solid rgb(58, 57, 57);
+}
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_content .card {
+  width: 28%;
+}
+.contact_text,
+.about_text,
+.follow_text {
+  font-size: 36px;
+  font-family: Lucida-Bright-Demibold, sans-serif;
+  margin-bottom: 45px;
+}
+.contact_text p,
+.about_text p {
+  line-height: 26px;
+}
+.footer_content .social_links i {
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 100%;
+  font-size: 24px;
+  margin-left: 8px;
+}
+.footer_content .social_links .fa-facebook-f {
+  padding: 15px 20px;
+}
+.footer_content .social_links .fa-youtube {
+  background-color: white;
+  color: var(--pink);
+}
+.template{
+  background-color: var(--pink);
+  color: white;
+  padding: 35px 0;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+}
+@media screen and (max-width: 1399px) {
+  h1 {
+    font-size: 52px;
+  }
+  h2{
+    font-size: 46px;
+  }
+  h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  nav {
+    top: 50px;
+  }
+  /* banner */
+  .banner {
+    height: 730px;
+  }
+  .banner_content {
+    height: 730px;
+  }
+  .banner_text_part {
+    width: 38%;
+    top: 240px;
+  }
+  .banner_text_part h1 {
+    margin-bottom: 20px;
+  }
+  .banner_btn {
+    padding: 8px 30px;
+  }
+  /* philosophy */
+  .philosophy_content .left_part h2 {
+    margin-bottom: 45px;
+  }
+  /* methodology */
+  .pause_btn{
+    left: 240px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  h2 span {
+    padding: 11px;
+  }
+  h3 {
+    font-size: 38px;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  h5 {
+    font-size: 28px;
+  }
+  h6 {
+    font-size: 25px;
+  }
+  p {
+    line-height: 25px;
+  }
+  .btn {
+    padding: 8px 35px 8px 30px;
+  }
+  nav {
+    top: 45px;
+  }
+  .logoimg {
+    width: 24%;
+  }
+  .logotext p {
+    font-size: 28px;
+  }
+  .logotext p a {
+    font-size: 45px;
+  }
+  .nav_link ul li a {
+    font-size: 18px;
+  }
+  /* banner */
+  .banner {
+    height: 650px;
+  }
+  .banner_content {
+    height: 650px;
+  }
+  .banner_text_part {
+    width: 38%;
+    top: 210px;
+  }
+  .banner_text_part h1 {
+    margin-bottom: 20px;
+  }
+  .banner_text_part h1 span {
+    padding: 11px;
+  }
+  .banner_text_part h5 {
+    margin-bottom: 15px;
+  }
+  .banner_text_part p {
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .banner_btn {
+    padding: 8px 35px 8px 30px;
+  }
+  /* philosophy */
+  .philosophy_content .left_part h2 {
+    margin-bottom: 45px;
+  }
+
+  .para1 {
+    margin-bottom: 40px;
+    line-height: 25px;
+  }
+  .para2 {
+    margin-bottom: 40px;
+    line-height: 25px;
+  }
+  .philosophy_content .right_part {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+  /* card_section */
+  .card_section .cards {
+    width: 32%;
+  }
+  .card_section .card_img {
+    padding: 15px;
+    margin-bottom: 45px;
+  }
+  .card_section .card_body p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  /* strength */
+  .strength_content .left_part {
+    margin-left: 36px;
+  }
+  .strength_content .right_part {
+    width: 40%;
+    margin-left: 20px;
+  }
+  .strength_content .right_part p {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .strength .arrow .fa-angle-left,
+  .strength .arrow .fa-angle-right {
+    padding: 12px 18px;
+    font-size: 24px;
+  }
+  /* yoga */
+  .yoga .yoga_content p {
+    font-size: 38px;
+  }
+  /* first class */
+  .first_class_content .cards {
+    width: 31%;
+  }
+  .first_class_content .card_body {
+    padding-left: 18px;
+    padding-bottom: 24px;
+    /* background-color: rgb(128, 19, 19); */
+  }
+  .first_class_content .card_img {
+    margin-bottom: 10px;
+  }
+  .first_class_content .card_body h6 {
+    margin-bottom: 22px;
+  }
+  .first_class_content .card_body p {
+    margin-bottom: 22px;
+  }
+  /* methodology */
+  .pause_btn {
+    top: 310px;
+    right: 150px;
+  }
+  /* yoga therapy */
+  .yoga_therapy {
+    height: 75vh;
+  }
+  .yoga_therapy_content {
+    height: 75vh;
+  }
+  .yoga_therapy_text {
+    top: 28px;
+  }
+  .yoga_therapy_text h2 {
+    margin-bottom: 35px;
+  }
+  .yoga_therapy_text p {
+    font-size: 25px;
+  }
+  .yoga_therapy_text .inhale {
+    margin-bottom: 20px;
+  }
+  .yoga_therapy_text p i {
+    margin-right: 13px;
+  }
+  /* footer */
+  .contact_text,
+  .about_text,
+  .follow_text {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .footer_content .social_links i {
+    padding: 13px;
+  }
+  .footer_content .social_links .fa-facebook-f {
+    padding: 13px 18px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .common_padding {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    margin-bottom: 15px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  nav {
+    top: 38px;
+  }
+  .logoimg {
+    width: 20%;
+  }
+  .logotext p {
+    font-size: 22px;
+  }
+  .logotext p a {
+    font-size: 35px;
+  }
+  .nav_link ul li {
+    margin-left: 20px;
+  }
+  .nav_link ul li a {
+    font-size: 16px;
+  }
+  .toggler {
+    margin-left: 30px;
+  }
+  .toggler i {
+    font-size: 23px;
+  }
+  .banner {
+    height: 540px;
+  }
+  .banner_content {
+    height: 540px;
+  }
+  .banner_text_part {
+    width: 37%;
+    top: 160px;
+  }
+  .banner_text_part h1 {
+    margin-bottom: 7px;
+  }
+  .banner_text_part h1 span {
+    padding: 6px;
+  }
+  .banner_text_part h5 {
+    margin-bottom: 10px;
+  }
+  .banner_text_part h1 span {
+    padding: 8px;
+  }
+  .banner_text_part p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 19px;
+  }
+  .banner_btn {
+    font-size: 12px;
+    padding: 7px 20px;
+  }
+  /* philosophy */
+  .philosophy_content .left_part {
+    width: 60%;
+  }
+  .philosophy_content .left_part h2 {
+    margin-bottom: 35px;
+  }
+  .philosophy_content .right_part {
+    width: 40%;
+  }
+  .philosophy_content .right_part {
+    padding-left: 20px;
+  }
+  .para1 {
+    margin-bottom: 30px;
+  }
+  .para2 {
+    margin-bottom: 30px;
+  }
+  /* card-section */
+  .card_section .py-70 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .card_section .cards {
+    width: 31%;
+  }
+  .card_section .card_img {
+    padding: 13px;
+    margin-bottom: 25px;
+  }
+  .card_section .card_body p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 17px;
+  }
+  /* strengths */
+  .strength_content {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .strength_content .left_part {
+    margin-left: 20px;
+    width: 25%;
+  }
+  .strength_content .right_part {
+    width: 33%;
+    margin-left: 0px;
+  }
+  .strength_content .right_part p {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .strength .arrow .fa-angle-left,
+  .strength .arrow .fa-angle-right {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+  /* yoga */
+  .yoga .left_part {
+    padding-left: 110px;
+  }
+  .yoga .left_part p {
+    font-size: 32px;
+  }
+  /* first class */
+  /* .first_class_content .card_img{
+    width: 100%;
+  }*/
+
+  .first_class_content .card_body h6 {
+    margin-bottom: 12px;
+  }
+  .first_class_content .card_body p {
+    margin-bottom: 10px;
+    line-height: 17px;
+  }
+  /* methodology */
+  .pause_btn {
+    top: 280px;
+    right: 110px;
+  }
+  /* yoga therapy */
+  .yoga_therapy {
+    height: 65vh;
+  }
+  .yoga_therapy_content {
+    height: 65vh;
+  }
+  .yoga_therapy_text {
+    top: 18px;
+  }
+  .yoga_therapy_text h2 {
+    margin-bottom: 30px;
+  }
+  .yoga_therapy_text p {
+    font-size: 20px;
+  }
+  .yoga_therapy_text .inhale {
+    margin-bottom: 20px;
+  }
+  /* footer */
+  .footer_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 4px solid rgb(58, 57, 57);
+  }
+  .contact_text,
+  .about_text,
+  .follow_text {
+    font-size: 27px;
+    margin-bottom: 33px;
+  }
+  .footer_content .social_links i {
+    padding: 10px;
+    font-size: 17px;
+  }
+  .footer_content .social_links .fa-facebook-f {
+    padding: 10px 15px;
+  }
+  .contact_text p,
+  .about_text p {
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .common_padding {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .py-70 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 45px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .btn {
+    padding: 8px 20px;
+  }
+  nav {
+    top: 25px;
+  }
+  .logoimg {
+    width: 20%;
+  }
+  .logotext p {
+    font-size: 16px;
+  }
+  .logotext p a {
+    font-size: 30px;
+  }
+  .nav_link {
+    display: none;
+  }
+  .toggler {
+    margin-left: 30px;
+  }
+  .banner {
+    height: 420px;
+  }
+  .banner_content {
+    height: 420px;
+  }
+  .banner_text_part {
+    width: 36%;
+    top: 135px;
+  }
+  .banner_text_part h1 {
+    margin-bottom: 4px;
+  }
+  .banner_text_part h5 {
+    margin-bottom: 5px;
+  }
+  .banner_btn {
+    padding: 3px 13px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .banner_text_part h1 span {
+    padding: 4px;
+  }
+  .banner_text_part p {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 12px;
+  }
+  /* philosophy */
+  .philosophy_content {
+    flex-direction: column;
+  }
+  .philosophy_content .left_part {
+    width: 100%;
+  }
+  .philosophy_content .right_part {
+    width: 60%;
+  }
+  .para1 {
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
+  .para2 {
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
+  .philosophy_content .left_part h2 {
+    margin-bottom: 20px;
+  }
+  h2 span {
+    padding: 10px;
+  }
+  /* card-section */
+  .card_content {
+    flex-direction: column;
+  }
+  .card_section .cards {
+    width: 70%;
+  }
+  .card_img {
+    padding: 25px;
+  }
+  /* beginners */
+  .beginners_content {
+    flex-direction: column;
+  }
+  .beginners_content .left_part {
+    width: 100%;
+  }
+  .beginners_content .right_part {
+    width: 70%;
+  }
+  .beginners_content .left_part h2 {
+    margin-bottom: 25px;
+  }
+  /* strengths */
+  .strength {
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+  .strength_content {
+    flex-direction: column;
+  }
+  .arrow {
+    display: none;
+  }
+  .strength_content .left_part {
+    width: 40%;
+    padding: 40px;
+    order: 1;
+  }
+  .strength_content .right_part {
+    width: 60%;
+    order: 2;
+  }
+  .strength_content .right_part p {
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
+  .yogi {
+    top: 100px;
+  }
+  /* yoga */
+  .yoga_content {
+    flex-direction: column;
+  }
+  .yoga_content .left_text_part {
+    width: 60%;
+    order: 2;
+  }
+  .yoga_content .right_part {
+    width: 40%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+  .yoga_text {
+    text-align: center;
+  }
+  .yoga .yoga_text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .yoga .yoga_text p {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  /* first class */
+  .first_class_content {
+    display: none;
+  }
+  .first_class_container {
+    display: block;
+    flex-direction: column;
+  }
+  .first_class_container .upper_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  .first_class_container .cards {
+    width: 45%;
+    background-color: var(--pink);
+    color: white;
+  }
+  .first_class_container .card_body {
+    padding-left: 18px;
+    padding-bottom: 24px;
+  }
+  .first_class_container .card_body h6 {
+    margin-bottom: 12px;
+  }
+  .first_class_container .card_body p {
+    margin-bottom: 12px;
+  }
+  .first_class_container .card_body a {
+    color: white;
+  }
+  /* methodology */
+  .method_content {
+    flex-direction: column;
+  }
+  .method_content .left_part {
+    width: 100%;
+    order: 2;
+  }
+  .method_content .left_part h2 {
+    margin-bottom: 40px;
+  }
+  .method_content .right_part {
+    width: 80%;
+    order: 1;
+  }
+  .pause_btn {
+    top: 330px;
+    right: 200px;
+  }
+  /* yoga therapy */
+  .yoga_therapy {
+    height: 50vh;
+  }
+  .yoga_therapy_content {
+    height: 50vh;
+  }
+  .yoga_therapy_text {
+    top: 1px;
+  }
+  .yoga_therapy_text h2 {
+    margin-bottom: 25px;
+  }
+  .yoga_therapy_text p {
+    font-size: 20px;
+  }
+  .yoga_therapy_text .inhale {
+    margin-bottom: 16px;
+  }
+  /* footer */
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contact_text,
+  .about_text,
+  .follow_text {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .footer_content .social_links i {
+    padding: 7px;
+    font-size: 14px;
+    margin-left: 4px;
+  }
+  .footer_content .social_links .fa-facebook-f {
+    padding: 7px 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .py-70 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    font-size: 18px;
+    line-height: 15px;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 18px;
+    margin-bottom: 7px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  h5 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .btn {
+    padding: 5px 18px;
+    font-size: 10px;
+  }
+  nav {
+    top: 20px;
+  }
+  .logoimg {
+    width: 17%;
+  }
+  .logotext p {
+    font-size: 14px;
+  }
+  .logotext p a {
+    font-size: 27px;
+  }
+  .banner {
+    height: 320px;
+  }
+  .banner_content {
+    height: 320px;
+  }
+  .banner_text_part {
+    width: 33%;
+    top: 107px;
+  }
+  .banner_text_part h1 {
+    margin-bottom: 12px;
+  }
+  .banner_text_part h5 {
+    margin-bottom: 5px;
+  }
+  .banner_text_part h1 span {
+    padding: 5px;
+  }
+  .banner_text_part p {
+    font-size: 10px;
+    line-height: 9px;
+    margin-bottom: 9px;
+  }
+  .banner_btn {
+    padding: 5px 20px 5px 20px;
+    font-size: 10px;
+  }
+  /* philosophy */
+  .philosophy_content {
+    flex-direction: column;
+  }
+  .philosophy_content .left_part {
+    width: 100%;
+  }
+  .philosophy_content .right_part {
+    width: 70%;
+  }
+  /* beginners */
+  .beginners {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .beginners_content {
+    flex-direction: column;
+  }
+  .beginners_content .left_part {
+    width: 90%;
+  }
+  .beginners_content .right_part {
+    width: 90%;
+  }
+  /* strength */
+  .strength_content .right_part {
+    width: 50%;
+  }
+  .strength_content .left_part {
+    width: 50%;
+  }
+  .strength_content .right_part p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+  .yogi {
+    top: 60px;
+    right: 10px;
+  }
+  /* yoga */
+  .yoga_content .left_text_part {
+    width: 40%;
+  }
+  .yoga_content .right_part {
+    width: 60%;
+  }
+  .yoga_text h2 {
+    font-size: 20px;
+    margin-bottom: 1px;
+  }
+  .yoga .yoga_text h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .yoga .yoga_text p {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  /* first class */
+  .first_class_content {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .first_class_container {
+    display: none;
+  }
+  .first_class_content .cards {
+    width: 70%;
+    margin-left: 70px;
+    margin-bottom: 35px;
+  }
+  .first_class_content .card_body {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .first_class_content .card_body h6 {
+    margin-bottom: 10px;
+  }
+  .first_class_content .card_body p {
+    font-size: 12px;
+    margin-bottom: 8px;
+    line-height: 12px;
+  }
+  .first_class_content .card_body a {
+    font-size: 10px;
+  }
+  /* methodology */
+  .pause_btn {
+    top: 280px;
+    right: 120px;
+  }
+  /* yoga therapy */
+  .yoga_therapy_text {
+    bottom: 8px;
+  }
+  /* footer */
+  .contact_text p,
+  .about_text p {
+    line-height: 17px;
+  }
+  .footer_content .social_links .fa-facebook-f {
+    padding: 6px 10px;
+  }
+}
+@media screen and (max-width: 489px) {
+  h1 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 18px;
+  }
+  h2 span {
+    padding: 4px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 8px;
+  }
+  .btn {
+    padding: 3px 15px 3px 15px;
+    font-size: 7px;
+    border: 1px solid var(--pink);
+  }
+  nav {
+    top: 15px;
+  }
+  .logotext p {
+    font-size: 15px;
+  }
+  .logotext p a {
+    font-size: 20px;
+  }
+  .banner {
+    height: 250px;
+  }
+  .banner_content {
+    height: 250px;
+  }
+  .banner_text_part {
+    width: 35%;
+    top: 90px;
+  }
+  .banner_text_part h1 {
+    margin-bottom: 8px;
+  }
+  .banner_text_part h5 {
+    margin-bottom: 5px;
+  }
+
+  .banner_text_part h1 span {
+    padding: 4px;
+  }
+  .banner_text_part p {
+    font-size: 9px;
+    line-height: 9px;
+    margin-bottom: 3px;
+  }
+  .banner_btn {
+    padding: 3px 15px 3px 15px;
+    font-size: 7px;
+    border: 1px solid var(--pink);
+  }
+  /* philosophy */
+  .philosophy_content .right_part {
+    width: 60%;
+  }
+  /* card section */
+  .card_section .cards {
+    width: 80%;
+  }
+  .card_section .card_body p {
+    margin-bottom: 20px;
+    line-height: 15px;
+    font-size: 13px;
+  }
+  /* strengths */
+  .strength_content .left_part {
+    padding: 0px;
+  }
+  .strength_content .right_part p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 25px;
+  }
+  .yogi {
+    top: 50px;
+    left: 100px;
+  }
+  /* yoga */
+  .yoga .yoga_text h2 {
+    margin-bottom: 12px;
+  }
+  .yoga .yoga_text h3 {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .yoga .yoga_text p {
+    font-size: 14px;
+  }
+  /* fcf */
+  .first_class_content .cards {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 25px;
+  }
+  /* yoga therapy */
+  .yoga_therapy {
+    height: 30vh;
+  }
+  .yoga_therapy_content {
+    height: 30vh;
+  }
+  .yoga_therapy_text {
+    top: -30px;
+  }
+  .yoga_therapy_text h2 {
+    margin-bottom: 15px;
+  }
+  .yoga_therapy_text p {
+    font-size: 16px;
+  }
+  .yoga_therapy_text .inhale {
+    margin-bottom: 5px;
+  }
+  /* footer */
+  .footer_content{
+    flex-direction: column;
+  }
+  .footer_content .card{
+    width: 70%;
+    margin-bottom: 25px;
+  }
+  .contact_text,
+  .about_text,
+  .follow_text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+
+}
+@media screen and (max-width: 320px) {
+  .common_padding {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .py-70 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  h1 {
+    font-size: 10px;
+    line-height: 3px;
+  }
+  h2 {
+    font-size: 15px;
+    line-height: 13px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 7px;
+    line-height: 3px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  .btn {
+    padding: 3px 13px 3px 13px;
+  }
+  p {
+    font-size: 10px;
+    line-height: 7px;
+  }
+  nav {
+    top: 8px;
+  }
+  .logoimg {
+    width: 11%;
+  }
+  .logotext p {
+    font-size: 8px;
+  }
+  .logotext p a {
+    font-size: 17px;
+  }
+  .toggler i {
+    font-size: 18px;
+  }
+  .banner {
+    height: 180px;
+  }
+  .banner_content {
+    height: 180px;
+  }
+  .banner_text_part h1 {
+    margin-bottom: 10px;
+  }
+  .banner_text_part h5 {
+    margin-bottom: 5px;
+  }
+  .banner_text_part {
+    width: 32%;
+    top: 60px;
+  }
+  .banner_text_part h1 span {
+    padding: 2px;
+  }
+  .banner_text_part p {
+    font-size: 4px;
+    line-height: 5px;
+    margin-bottom: 5px;
+  }
+  .banner_btn {
+    padding: 3px 13px 3px 13px;
+  }
+  /* philosophy */
+  .philosophy_content .left_part h2 {
+    margin-bottom: 14px;
+  }
+  h2 span {
+    padding: 6px;
+  }
+  .para1,
+  .para2 {
+    margin-bottom: 10px;
+    line-height: 15px;
+  }
+  /* card section */
+  .card_section .cards {
+    width: 100%;
+  }
+  .card_section .card_img {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .card_section .card_body p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  /* beginners */
+  .beginners_content .left_part .para1,
+  .beginners_content .left_part .para2 {
+    font-size: 15px;
+    line-height: 14px;
+  }
+  /* strengths */
+  .strength {
+    padding-top: 20px;
+  }
+  .strength_content .right_part p {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 25px;
+  }
+  .yogi {
+    top: 36px;
+    left: 70px;
+  }
+  .yogi a {
+    font-size: 10px;
+  }
+  /* yoga */
+  .yoga {
+    padding-bottom: 20px;
+  }
+  .yoga_content .left_text_part {
+    width: 100%;
+  }
+  .yoga_content .right_part {
+    width: 100%;
+  }
+  .yoga .left_part h3 {
+    margin-bottom: 10px;
+  }
+  .yoga .left_part p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  /* first class */
+  .first_class_content .cards {
+    margin: 30px;
+    margin-left: 0;
+    width: 100%;
+  }
+  /* methodology */
+  .method_content .left_part {
+    width: 100%;
+  }
+  .method_content .right_part {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .method_content .right_part img {
+    padding: 0px;
+  }
+  .pause_btn {
+    top: 80px;
+    right: 90px;
+  }
+  /* yoga therapy */
+  .yoga_therapy {
+    height: 21vh;
+  }
+  .yoga_therapy_content {
+    height: 21vh;
+  }
+  .yoga_therapy_text {
+    top: -40px;
+  }
+  .yoga_therapy_text h2 {
+    margin-bottom: 10px;
+  }
+  .yoga_therapy_text p {
+    font-size: 10px;
+  }
+  .yoga_therapy_text .inhale {
+    margin-bottom: 5px;
+  }
+  .yoga_therapy_text p i {
+    margin-right: 8px;
+  }
+  /* footer */
+  .contact_text,
+  .about_text,
+  .follow_text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
